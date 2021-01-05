@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { normalizeData } from "./Format.js";
+import {aggravatedAssaults, arsons, burglaries, homicides, larcenies, motorVehicleThefts, propertyCrimes, rapes, robberies, violentCrimes} from './HardCodedData.js';
 import {
   LineChart,
   Line,
@@ -32,10 +33,11 @@ export const CrimeChart = () => {
       )
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
-        console.log(formatedData);
+        // console.log(formatedData);
         setChartData1(formatedData);
       })
       .catch((err) => {
+        setChartData1(aggravatedAssaults);
         console.log(err);
       });
 
@@ -46,10 +48,11 @@ export const CrimeChart = () => {
       )
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
-        console.log(formatedData);
+        // console.log(formatedData);
         setChartData2(formatedData);
       })
       .catch((err) => {
+        setChartData2(burglaries);
         console.log(err);
       });
 
@@ -60,10 +63,11 @@ export const CrimeChart = () => {
       )
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
-        console.log(formatedData);
+        // console.log(formatedData);
         setChartData3(formatedData);
       })
       .catch((err) => {
+        setChartData3(larcenies);
         console.log(err);
       });
 
@@ -74,10 +78,11 @@ export const CrimeChart = () => {
       )
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
-        console.log(formatedData);
+        // console.log(formatedData);
         setChartData4(formatedData);
       })
       .catch((err) => {
+        setChartData4(motorVehicleThefts);
         console.log(err);
       });
 
@@ -89,8 +94,10 @@ export const CrimeChart = () => {
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
         setChartData5(formatedData);
+        // console.log(formatedData);
       })
       .catch((err) => {
+        setChartData5(homicides);
         console.log(err);
       });
 
@@ -102,8 +109,10 @@ export const CrimeChart = () => {
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
         setChartData6(formatedData);
+        // console.log(formatedData);
       })
       .catch((err) => {
+        setChartData6(rapes);
         console.log(err);
       });
 
@@ -115,8 +124,10 @@ export const CrimeChart = () => {
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
         setChartData7(formatedData);
+        // console.log(formatedData);
       })
       .catch((err) => {
+        setChartData7(robberies);
         console.log(err);
       });
 
@@ -128,8 +139,10 @@ export const CrimeChart = () => {
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
         setChartData8(formatedData);
+        // console.log(formatedData);
       })
       .catch((err) => {
+        setChartData8(arsons);
         console.log(err);
       });
 
@@ -140,9 +153,11 @@ export const CrimeChart = () => {
       )
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
+        // console.log(formatedData);
         setChartData9(formatedData);
       })
       .catch((err) => {
+        setChartData9(violentCrimes);
         console.log(err);
       });
 
@@ -154,8 +169,10 @@ export const CrimeChart = () => {
       .then((res) => {
         let formatedData = normalizeData(res.data.data);
         setChartData10(formatedData);
+        // console.log(formatedData);
       })
       .catch((err) => {
+        setChartData10(propertyCrimes);
         console.log(err);
       });
 
