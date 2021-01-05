@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { normalizeData } from "./Format.js";
-import {aggravatedAssaults, arsons, burglaries, homicides, larcenies, motorVehicleThefts, propertyCrimes, rapes, robberies, violentCrimes} from './HardCodedData.js';
+import {aggravatedAssaults, arsons, burglaries, homicides, larcenies, motorVehicleThefts, propertyCrimes, rapes, robberies, violentCrimes} from './UtahHardCodedData.js';
 import {
   LineChart,
   Line,
