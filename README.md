@@ -1,3 +1,7 @@
+# API used:
+[API link](https://crime-data-explorer.fr.cloud.gov/api)
+Unfortunately, I did not see a call to access ALL offenses data for a state therefore I request data PER offense.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
